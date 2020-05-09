@@ -1,0 +1,41 @@
+server:
+  port: 8081
+
+
+#person:
+#  lastName: zhangsan
+#  age: 18
+#  boss: false
+#  birth: 2019/12/12
+#  maps: {k1: v1,k2: 22}
+#  lists: [zhangsan,lisi]
+#  dog:
+#    name: wangcai
+#    age: 2
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3308/mybatis?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: "gqs123456"
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 6000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    filters: stat,wall,slf4j
+    maxPoolPreparedStatementPerConnectionSize: 20
+    useGlobalDataSourceStat: true
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillies=500
+
+
+#    schema:
+#      - classpath:xxl_job_log.sql
+

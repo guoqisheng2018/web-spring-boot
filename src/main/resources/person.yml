@@ -1,0 +1,15 @@
+#
+##server.port=8111
+#
+#
+#
+#person:
+#  lastName: zhangsan
+#  age: 18
+#  boss: false
+#  birth: 2019/12/12
+#  maps: {k1: v1,k2: 22}
+#  lists: [zhangsan,lisi]
+#  dog:
+#    name: wangcai
+#    age: 2
